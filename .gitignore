@@ -1,0 +1,13 @@
+build/
+dist/
+releases/
+*.egg-info/
+*.egg
+__pycache__/
+*.py[cod]
+.installed.cfg
+.idea/
+*.pyc
+*.pyo
+*.pyd
+*.log
