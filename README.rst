@@ -3,9 +3,10 @@ Telethon Redis session
 
 A `Pyrogram`_ session storage implementation backed by Redis.
 
-Note: The hooks will not work until `Pyrogram`_ merge `#6b37046`_.
+Note: The hooks will not work until `Pyrogram`_ merge `#6b37046`_ or use patched `my pyrogram patched version`_.
 
 .. _Pyrogram: https://github.com/pyrogram/pyrogram
+.. _my pyrogram patched version: https://github.com/ezdev128/pyrogram
 .. _#6b37046: https://github.com/pyrogram/pyrogram/commit/6b37046254d79274ab589d9a80ff166429e3dc67
 
 Usage
