@@ -110,7 +110,7 @@ class RedisSession(object):
             s = self._unpack(s)
             self.dc_id = s["dc_id"]
             self.test_mode = s["test_mode"]
-            self.auth_key = base64.b64decode("".join(s["auth_key"]))
+            self.auth_key = base64.b64decode(s["auth_key"])
             self.user_id = s["user_id"]
             self._to_client()
         except Exception as ex:
@@ -127,7 +127,6 @@ class RedisSession(object):
             return
 
         auth_key = base64.b64encode(self.auth_key).decode()
-        auth_key = [auth_key[i: i + 43] for i in range(0, len(auth_key), 43)]
 
         s = {
             "dc_id": self.dc_id,
